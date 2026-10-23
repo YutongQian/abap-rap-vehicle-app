@@ -105,11 +105,11 @@ This follows SAP's extensibility concept.
 
 | Flight App – Object Page | Vehicle Types – List |
 |---|---|
-| ![](screenshots/flight_object_page.jpg) | ![](screenshots/vehicletype_list.jpg) |
+| ![](flight_object_page.jpg) | ![](vehicletype_list.jpg) |
 
 | Value Help Vehicle Kind | EML Console Output |
 |---|---|
-| ![](screenshots/vehiclekind_vh.jpg) | ![](screenshots/eml_console.jpg) |
+| ![](vehiclekind_vh.jpg) | ![](eml_console.jpg) |
 
 
 ---
