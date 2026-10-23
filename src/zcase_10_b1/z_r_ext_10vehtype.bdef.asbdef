@@ -1,0 +1,25 @@
+extension implementation in class zbp_r_ext_10vehtype unique;
+
+extend behavior for Vehicletype
+{
+     validation ZZcheck_ext_specifications on save
+{ create;
+  update;
+}
+extend draft determine action Prepare
+  {
+    validation ZZcheck_ext_specifications;
+  }
+extend mapping for Z10_VEHTYPE corresponding
+{
+  ZZLiftCapmaxZCA =   ZZLift_CAPMAXZCA;
+  ZZLiftMaxUnitZCA = ZZLift_MaxUnitZCA;
+  ZZLiftCapminZCA = ZZLift_CapminZCA;
+  ZZLiftMinUnitZCA = ZZLift_MinUnitZCA;
+  ZZMaxHeightZCA = zzmax_heightzca;
+  ZZHeightUnitZCA   = ZZHEIGHT_UNITZCA;
+  ZZMaxRangeZCA = zzmax_rangezca;
+  ZZRangeUnitZCA = zzrange_unitzca;
+
+}
+}

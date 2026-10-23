@@ -1,0 +1,6 @@
+@EndUserText.label: 'Z_C_10VEHTYPE'
+@MappingRole: true
+define role Z_C_10VEHTYPE {
+  grant select on Z_C_10VEHTYPE
+  where INHERITING CONDITIONS FROM ENTITY Z_R_10VEHTYPE REPLACING { ROOT WITH _BaseEntity };
+}

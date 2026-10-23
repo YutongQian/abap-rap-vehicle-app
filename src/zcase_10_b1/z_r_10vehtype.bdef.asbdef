@@ -1,0 +1,64 @@
+managed implementation in class ZBP_R_10VEHTYPE unique;
+strict ( 2 );
+with draft;
+extensible {
+  with validations on save;
+}
+define behavior for Z_R_10VEHTYPE alias Vehicletype
+persistent table Z10_VEHTYPE
+extensible
+draft table Z10VEHTYPE_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Manufacturer,
+   Model;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   Manufacturer,
+   Model;
+
+
+  create;
+  update;
+  delete;
+  validation check_specifications on save { create;update;}
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare extensible{
+  validation check_specifications;
+  }
+
+  mapping for Z10_VEHTYPE corresponding extensible
+  {
+    Manufacturer = MANUFACTURER;
+    Model = MODEL;
+    ManuName = MANU_NAME;
+    VehicleKind = VEHICLE_KIND;
+    Seats = SEATS;
+    Cargo = CARGO;
+    TankCap = TANK_CAP;
+    CargoUnit = CARGO_UNIT;
+    TankcapUnit = TANKCAP_UNIT;
+    Pass = PASS;
+    Tv = TV;
+    Toilet = TOILET;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}

@@ -1,0 +1,108 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CarrierID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CarrierID'
+annotate view ZC_10FLIGHT_B6 with
+{
+ 
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @Consumption.valueHelpDefinition: [
+                                    { entity: {
+                                        name: '/LRN/S4D400_I_CarrierVH',
+                                        element: 'CarrierID' 
+                                        }  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  CarrierID;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ConnectionID;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  FlightDate;
+  @EndUserText.label: 'Previous updates'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Previous updates'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Previous updates'
+  } ]
+  ChangeCount;
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  PlaneTypeID;
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  LocalCreatedBy;
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  LocalCreatedAt;
+ @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ] 
+  LocalLastChangedBy;
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LocalLastChangedAt;
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedAt;
+}

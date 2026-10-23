@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z10CUS_CASENAKL</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Customer Message Class for Extensions</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Max. lift capacity must be strictly greater than min. lift capacity!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Max. lift must be greater than 0!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Unit &amp;1 for max. lift capacity is not a valid unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Min. lift must be greater than 0!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Unit &amp;1 for min. lift capacity is not a valid unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Unit &amp;1 for max. height  is not a valid unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Max. height must be greater than 0!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Max. range must be greater than 0!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Unit &amp;1 for max. range is not a valid unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CUS_CASENAKL</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Unit &amp;1 and Unit &amp;2 should be the same unit!</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

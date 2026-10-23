@@ -1,0 +1,484 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Program Check",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "selectedChecks": [
+    {
+      "checkName": "SLIN_MAIN",
+      "parameters": [
+        {
+          "name": "StandardOrCustom",
+          "value": "2"
+        },
+        {
+          "name": "SubroutineInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "FunctionInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "ExternalProgramInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "LoadSizes",
+          "value": "true"
+        },
+        {
+          "name": "Authorizations",
+          "value": "true"
+        },
+        {
+          "name": "GuiStatus",
+          "value": "true"
+        },
+        {
+          "name": "SetGetParameters",
+          "value": "true"
+        },
+        {
+          "name": "MessageStatements",
+          "value": "true"
+        },
+        {
+          "name": "Strings",
+          "value": "true"
+        },
+        {
+          "name": "CurrencyFields",
+          "value": "true"
+        },
+        {
+          "name": "FieldAttributes",
+          "value": "true"
+        },
+        {
+          "name": "SyntaxCheckWarnings",
+          "value": "true"
+        },
+        {
+          "name": "Internationalization",
+          "value": "true"
+        },
+        {
+          "name": "SuperfluousStatements",
+          "value": "true"
+        },
+        {
+          "name": "ProblematicStatements",
+          "value": "true"
+        },
+        {
+          "name": "StructureEnhancements",
+          "value": "true"
+        },
+        {
+          "name": "OutdatedStatements",
+          "value": "true"
+        },
+        {
+          "name": "CrossProgramChecks",
+          "value": "true"
+        },
+        {
+          "name": "ProgrammingGuidelines",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "checkName": "CI_NAMING_NEW",
+      "parameters": [
+        {
+          "name": "PrefixElem",
+          "value": "[EV]"
+        },
+        {
+          "name": "PrefixGen",
+          "value": "[GV]"
+        },
+        {
+          "name": "PrefixRefBadi",
+          "value": "B"
+        },
+        {
+          "name": "PrefixRefCls",
+          "value": "O"
+        },
+        {
+          "name": "PrefixRefData",
+          "value": "R"
+        },
+        {
+          "name": "PrefixRefIntf",
+          "value": "I"
+        },
+        {
+          "name": "PrefixRefExp",
+          "value": "X"
+        },
+        {
+          "name": "PrefixStruct",
+          "value": "S"
+        },
+        {
+          "name": "PrefixTabAny",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabHash",
+          "value": "TH?"
+        },
+        {
+          "name": "PrefixTabIndex",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabStd",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabSort",
+          "value": "TS?"
+        },
+        {
+          "name": "WebDynp",
+          "value": "false"
+        },
+        {
+          "name": "Report"
+        },
+        {
+          "name": "FunctionGroup"
+        },
+        {
+          "name": "DataGlob",
+          "valueList": [
+            "(/.*/)?G[:type:]_"
+          ]
+        },
+        {
+          "name": "FieldSymbolGlob",
+          "valueList": [
+            "<G[:type:]_"
+          ]
+        },
+        {
+          "name": "ConstantGlob",
+          "valueList": [
+            "(/.*/)?GC[:type:]?_"
+          ]
+        },
+        {
+          "name": "TypeGlob"
+        },
+        {
+          "name": "SelectOption",
+          "valueList": [
+            "S_.."
+          ]
+        },
+        {
+          "name": "Parameter",
+          "valueList": [
+            "P_.."
+          ]
+        },
+        {
+          "name": "SelectionScreen"
+        },
+        {
+          "name": "FieldGroup"
+        },
+        {
+          "name": "Define"
+        },
+        {
+          "name": "DataLoc",
+          "valueList": [
+            "(/.*/)?L[:type:]_"
+          ]
+        },
+        {
+          "name": "Static",
+          "valueList": [
+            "(/.*/)?S[:type:]_"
+          ]
+        },
+        {
+          "name": "FieldSymbolLoc",
+          "valueList": [
+            "<(/.*/)?L[:type:]_"
+          ]
+        },
+        {
+          "name": "ConstantLoc",
+          "valueList": [
+            "(/.*/)?LC[:type:]?_"
+          ]
+        },
+        {
+          "name": "TypeLoc"
+        },
+        {
+          "name": "Function"
+        },
+        {
+          "name": "FunctionImporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionExporting",
+          "valueList": [
+            "E[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionTable",
+          "valueList": [
+            "T[:type:]_"
+          ]
+        },
+        {
+          "name": "Form"
+        },
+        {
+          "name": "FormUsing",
+          "valueList": [
+            "P[:type:]_"
+          ]
+        },
+        {
+          "name": "FormChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "FormTable",
+          "valueList": [
+            "T[:type:]_"
+          ]
+        },
+        {
+          "name": "ClassGlob",
+          "valueList": [
+            "(/.*/)?CL_",
+            "ZCL_"
+          ]
+        },
+        {
+          "name": "ClassExceptionGlob",
+          "valueList": [
+            "(/.*/)?CX_",
+            "ZCX_"
+          ]
+        },
+        {
+          "name": "ClassForTestingGlob",
+          "valueList": [
+            "(/.*/)?TCL?_",
+            "ZTCL?_"
+          ]
+        },
+        {
+          "name": "ClassForBehavior",
+          "valueList": [
+            "(/.*/)?BP_",
+            "ZBP_"
+          ]
+        },
+        {
+          "name": "ClassForEvents"
+        },
+        {
+          "name": "ClassLoc",
+          "valueList": [
+            "LCL_"
+          ]
+        },
+        {
+          "name": "ClassExceptionLoc",
+          "valueList": [
+            "LCX_"
+          ]
+        },
+        {
+          "name": "ClassForTestingLoc",
+          "valueList": [
+            "LTCL?_"
+          ]
+        },
+        {
+          "name": "ClassRAPBehaviorHandler",
+          "valueList": [
+            "LHC_"
+          ]
+        },
+        {
+          "name": "ClassRAPBehaviorSaver",
+          "valueList": [
+            "LSC_"
+          ]
+        },
+        {
+          "name": "InterfaceGlob",
+          "valueList": [
+            "(/.*/)?IF_",
+            "ZIF_"
+          ]
+        },
+        {
+          "name": "InterfaceLoc",
+          "valueList": [
+            "LIF_"
+          ]
+        },
+        {
+          "name": "ClsData",
+          "valueList": [
+            "M[:type:]_"
+          ]
+        },
+        {
+          "name": "ClsClassData",
+          "valueList": [
+            "G[:type:]_"
+          ]
+        },
+        {
+          "name": "ClsConstant",
+          "valueList": [
+            "C[:type:]?_"
+          ]
+        },
+        {
+          "name": "ClsType"
+        },
+        {
+          "name": "IntfData",
+          "valueList": [
+            "M[:type:]_"
+          ]
+        },
+        {
+          "name": "IntfClassData",
+          "valueList": [
+            "G[:type:]_"
+          ]
+        },
+        {
+          "name": "IntfConstant",
+          "valueList": [
+            "C[:type:]?_"
+          ]
+        },
+        {
+          "name": "IntfType"
+        },
+        {
+          "name": "Method"
+        },
+        {
+          "name": "MethodImporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodExporting",
+          "valueList": [
+            "E[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodReturning",
+          "valueList": [
+            "R[:type:]_"
+          ]
+        },
+        {
+          "name": "Event"
+        },
+        {
+          "name": "EventExporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        }
+      ]
+    },
+    {
+      "checkName": "CI_ABAP_DOC_COMMENT",
+      "parameters": [
+        {
+          "name": "IntroduceProgram",
+          "value": "false"
+        },
+        {
+          "name": "Classes",
+          "value": "true"
+        },
+        {
+          "name": "Interfaces",
+          "value": "true"
+        },
+        {
+          "name": "Types",
+          "value": "false"
+        },
+        {
+          "name": "DataObjects",
+          "value": "false"
+        },
+        {
+          "name": "Methods",
+          "value": "true"
+        },
+        {
+          "name": "Events",
+          "value": "false"
+        },
+        {
+          "name": "Forms",
+          "value": "false"
+        },
+        {
+          "name": "FunctionModules",
+          "value": "false"
+        },
+        {
+          "name": "Parameters",
+          "value": "false"
+        },
+        {
+          "name": "ProcedureExceptions",
+          "value": "false"
+        },
+        {
+          "name": "ClassBasedExeptions",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}

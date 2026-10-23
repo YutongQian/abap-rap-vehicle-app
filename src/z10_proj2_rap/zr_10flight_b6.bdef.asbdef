@@ -1,0 +1,61 @@
+managed implementation in class ZBP_R_10FLIGHT_B6 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_10FLIGHT_B6 alias Zr10flightB6
+persistent table Z10_FLIGHT_B6
+extensible
+draft table Z10FLIGHT_B6_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   CarrierID,
+   ConnectionID,
+   FlightDate;
+
+  field ( readonly )
+   ChangeCount,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   CarrierID,
+   ConnectionID,
+   FlightDate;
+
+
+  create;
+  update;
+  delete;
+
+  determination set_changecount on save { create; update; }
+  validation check_flightdate on save { create; }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare{
+    determination set_changecount;
+    validation check_flightdate;}
+
+  mapping for Z10_FLIGHT_B6 corresponding extensible
+  {
+    CarrierID = CARRIER_ID;
+    ConnectionID = CONNECTION_ID;
+    FlightDate = FLIGHT_DATE;
+    ChangeCount = CHANGE_COUNT;
+    PlaneTypeID = PLANE_TYPE_ID;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}

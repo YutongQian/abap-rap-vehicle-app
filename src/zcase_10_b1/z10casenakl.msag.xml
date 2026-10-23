@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z10CASENAKL</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>The seat range is 1–200</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Cargo must greater than 0 and smaller than 9999999!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Unit &amp;1 for Tankcapacity is not a valid volume unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Number of Passsengers must great than 0 and smaller than 200!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Tankcapacity too high for cars!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Unit &amp;1 for Cargo is not a valid mass unit!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Vehicle type &amp;1 invalid !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Tankcapacity must greater than 0 and smaller than 99999!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Cargo only relevant for Truck.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z10CASENAKL</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Passenger only relevant for bus.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

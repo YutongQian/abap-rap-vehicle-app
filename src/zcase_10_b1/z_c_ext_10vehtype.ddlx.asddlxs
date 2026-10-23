@@ -1,0 +1,55 @@
+@Metadata.layer: #CUSTOMER
+annotate view Z_C_10VEHTYPE
+    with 
+{
+    @EndUserText.label: 'Max. Lifting Capacity'
+    @UI.identification: [ { position: 110 } ]  
+    @UI.lineItem: [ { position: 110 } ]        
+    @UI.selectionField: [ { position: 110 } ]  
+    ZZLiftCapmaxZCA;
+    @Consumption.valueHelpDefinition: [ { entity: { name: 'ZI10_MassunitVH', 
+                                          element: 'UnitOfMeasure' } } ]
+    ZZLiftMaxUnitZCA;
+    @EndUserText.label: 'Min. Lifting Capacity'
+  @UI.identification: [ { position: 120 } ]
+  @UI.lineItem: [ { position: 120 } ]
+  @UI.selectionField: [ { position: 120 } ]
+    ZZLiftCapminZCA;
+   
+    @Consumption.valueHelpDefinition: [ { entity: { name: 'ZI10_MassunitVH', 
+                                          element: 'UnitOfMeasure' } } ]
+    ZZLiftMinUnitZCA;
+    @EndUserText.label: 'Maximum Lifting Height'
+  @UI.identification: [ { position: 130 } ]
+  @UI.lineItem: [ { position: 130 } ]
+  @UI.selectionField: [ { position: 130 } ]
+    ZZMaxHeightZCA;
+    @Consumption.valueHelpDefinition: [ { entity: { name: 'Z10_LengthunitVH', 
+                                          element: 'UnitOfMeasure' } } ]
+    ZZHeightUnitZCA;
+    @EndUserText.label: 'Maximum Lifting Radius'
+  @UI.identification: [ { position: 140 } ]
+  @UI.lineItem: [ { position: 140 } ]
+  @UI.selectionField: [ { position: 140 } ]
+    ZZMaxRangeZCA;
+    @Consumption.valueHelpDefinition: [ { entity: { name: 'Z10_LengthunitVH', 
+                                          element: 'UnitOfMeasure' } } ]  
+    ZZRangeUnitZCA;
+    @UI.lineItem: [ { position: 150 } ]
+  @UI.selectionField: [ { position: 150 } ] 
+  CreatedBy;
+  @UI.lineItem: [ { position: 160 } ]
+  @UI.selectionField: [ { position: 160 } ] 
+  CreatedAt;
+  
+  @UI.lineItem: [ { position: 170 } ]
+  @UI.selectionField: [ { position: 170 } ] 
+  LocalLastChangedBy;
+  
+  @UI.lineItem: [ { position: 180 } ]
+  @UI.selectionField: [ { position: 180 } ] 
+  LocalLastChangedAt;
+  @UI.lineItem: [ { position: 190 } ]
+  @UI.selectionField: [ { position: 190 } ] 
+  LastChangedAt;
+}
